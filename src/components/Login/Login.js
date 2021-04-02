@@ -37,9 +37,9 @@ const { from } = location.state || { from: { pathname: "/" } };
 
     }
     return (
-        <div>
+        <div style={{textAlign:"center"}}>
             <h1>This is Login</h1>
-            <button onClick={handleSignIn}>Google Sign In</button>
+            <button onClick={handleSignIn}>Continue With Google</button>
         </div>
     );
 };

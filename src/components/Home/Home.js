@@ -1,15 +1,15 @@
 import React,{useState,useEffect} from 'react';
-import Event from '../Event/Event';
-//import Order from '../Order/Order';
+import Product from '../Product/Product';
+
 
 
 const Home = () => {
-    const [events, setEvents] = useState([]);
+    const [products, setProducts] = useState([]);
 
     useEffect(() => {
         fetch('https://whispering-peak-81646.herokuapp.com/events')
         .then(res => res.json())
-        .then(data => setEvents(data))
+        .then(data => setProducts(data))
     }, []) 
     
     
@@ -17,8 +17,9 @@ const Home = () => {
     return (
         <div className="row">
             {
-                events.map(event =><Event key={event.name}event={event}></Event>)
+                products.map(product =><Product key={product.name} product={product}></Product>)
             }
+        
         </div>
     );
 };

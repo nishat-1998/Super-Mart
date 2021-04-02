@@ -6,11 +6,12 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import AddEvents from './components/AddEvents/AddEvents';
 import Header from './components/Header/Header';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Order from './components/Order/Order';
+import Orders from './components/Orders/Orders';
+import AddProducts from './components/AddProducts/AddProducts';
 
 export const UserContext = createContext();
 
@@ -18,7 +19,6 @@ function App() {
   const [loggedInUser,setLoggedInUser] =useState({});
   return (
     <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
-      <p>Name:{loggedInUser.name}</p>
     <Router>
       <Header/> 
         <Switch>
@@ -31,8 +31,11 @@ function App() {
             <PrivateRoute path="/order/:name">
               <Order/>
             </PrivateRoute>
-          <PrivateRoute path="/addEvents">
-            <AddEvents />
+          <PrivateRoute path="/orders">
+            <Orders/>
+          </PrivateRoute>
+          <PrivateRoute path="/addProducts">
+            <AddProducts/>
           </PrivateRoute>
           <Route path="/dashboard">
             </Route>

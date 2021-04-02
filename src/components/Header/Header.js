@@ -17,10 +17,11 @@ const Header = () => {
                     </Form>
                     <Nav className="mr-auto">
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                        <Nav.Link as={Link} to ="/order">Order</Nav.Link> 
-                        <Nav.Link as={Link} to="/addEvents">Admin</Nav.Link>
+                        <Nav.Link as={Link} to ="/orders">Orders</Nav.Link> 
+                        <Nav.Link as={Link} to="/addProducts">Admin</Nav.Link>
                         <Nav.Link as={Link} to="/dashboard">Deals</Nav.Link>
                         <Nav.Link as={Link} to="/login">Log In</Nav.Link>
+        
                     </Nav>
                    
                 </Navbar.Collapse>

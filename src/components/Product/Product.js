@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
   
-  export default function Event({event}){
+  export default function Product({product}){
     const classes = useStyles();
     const history = useHistory()
       const handleBook = (name) => {
@@ -43,15 +43,15 @@ const useStyles = makeStyles((theme) => ({
         <CardHeader
           avatar={
             <Avatar aria-label="recipe" className={classes.avatar}>
-              {event.avatar}
+              {product.avatar}
             </Avatar>
           }
       
         />
-        <img style={{height: '300px'}} src={event.imageURL} alt=""/>
-        <h4> {event.name}</h4>
+        <img style={{height: '300px'}} src={product.imageURL} alt=""/>
+        <h4> {product.name}</h4>
         <CardActions disableSpacing>
-          <Button onClick={() => handleBook(event.name)} variant="contained" color="primary">
+          <Button onClick={() => handleBook(product.name)} variant="contained" color="primary">
               Buy Now
           </Button>
         </CardActions>

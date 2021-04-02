@@ -44,12 +44,12 @@ const AddEvents = () => {
   }
 
   return (
-    <div>
+    <div style={{textAlign:"center"}}>
       <h1>Add your awesome Product Here</h1>
      
       <form onSubmit={handleSubmit(onSubmit)}>
     
-    <input name="name" defaultValue="Add Products" ref={register} />
+    <input name="name" defaultValue=" Products Details" ref={register} />
     <br/>
     <input name="exampleRequired" type="file" onChange={handleImageUpload} />
     <br/>
