@@ -8,7 +8,6 @@ import Button from '@material-ui/core/Button';
 import { red } from '@material-ui/core/colors';
 import { useHistory } from 'react-router-dom';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 345,
@@ -39,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
           history.push(`/order/${name}`);
       }
     return (
-        <Card className={classes.root}>
+  <Card className={classes.root}>
         <CardHeader
           avatar={
             <Avatar aria-label="recipe" className={classes.avatar}>
@@ -56,5 +55,6 @@ const useStyles = makeStyles((theme) => ({
           </Button>
         </CardActions>
       </Card>
+
     );
 };
