@@ -1,7 +1,9 @@
 
 # SUPER MART WEB APP
+#MERN Stack
 
-A Single page E-commarce app where people are able to select product in their buy now and more with their information to navbar.
+MERN Stack Single page E-commerce app where people are able to select product in
+their buy now button and more with their information to navbar.
 
 [LIVE WEBSITE](https://super-mart-bd.web.app/) | [Live API Server](https://whispering-peak-81646.herokuapp.com)
 
